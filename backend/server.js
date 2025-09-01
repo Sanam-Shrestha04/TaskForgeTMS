@@ -33,6 +33,10 @@ app.use("/api/tasks", taskRoutes);
 app.use("/api/reports", reportRoutes);
 app.use("/uploads", express.static("uploads"));
 
+app.get("/", (req, res) => {
+  res.send("TaskForge backend is live 🚀");
+});
+
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
