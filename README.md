@@ -3,7 +3,7 @@
 TaskForge is a full-stack task management platform built using the MERN stack (MongoDB, Express.js, React, Node.js). It empowers teams to collaborate efficiently, track progress, and manage tasks with clarity and precision.
 
 > BSc CSIT 7th Semester Project  
-> Developed by: Jenisha, Sanam and Swechhya
+> Prepared by: Jenisha, Sanam and Swechhya
 
 ---
 
