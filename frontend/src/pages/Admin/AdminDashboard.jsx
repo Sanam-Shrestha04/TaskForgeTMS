@@ -130,10 +130,10 @@ const AdminDashboard = () => {
           </div>
           <CustomBarChart data={barChartData} xKey="priority" yKey="count" />
         </div>
-      </div>
 
       <div className="md:col-span-2">
-        <div className="card"></div>
+        <div className="card">
+        
         <div className="flex items-center justify-between">
           <h5 className="text-lg">Recent Tasks</h5>
           <button className="card-btn" onClick={handleSeeMore}>
@@ -141,7 +141,9 @@ const AdminDashboard = () => {
           </button>
         </div>
         <TaskListTable tableData={dashboardData?.recentTasks || []} />
+        </div> </div>
       </div>
+
     </DashboardLayout>
   );
 };
