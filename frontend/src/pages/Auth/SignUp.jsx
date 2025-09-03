@@ -28,7 +28,7 @@ const SignUp = () => {
 
     if (!fullName) return setError("Please enter your full name.");
     if (!validateEmail(email))
-      return setError("Please enter a valid email address.");
+      return setError("Please enter an email address.");
     if (!password) return setError("Please enter your password.");
     setError("");
 
@@ -87,14 +87,14 @@ const SignUp = () => {
               value={fullName}
               onChange={({ target }) => setFullName(target.value)}
               label="Full Name"
-              placeholder="Jack"
+              placeholder="Your Name"
               type="text"
             />
             <Input
               value={email}
               onChange={({ target }) => setEmail(target.value)}
               label="Email Address"
-              placeholder="jack@example.com"
+              placeholder="Email"
               type="email"
             />
             <Input
@@ -108,7 +108,7 @@ const SignUp = () => {
               value={adminInviteToken}
               onChange={({ target }) => setAdminInviteToken(target.value)}
               label="Admin Invite Token"
-              placeholder="6 Digit Code"
+              placeholder="Admin only"
               type="text"
             />
           </div>
